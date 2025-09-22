@@ -118,5 +118,4 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 ## Contact
 
 Created by Johanna Skåntorp - [skanto @ kth.se](mailto:skanto@kth.se)
-
-You may report issues at: https://github.com/yourusername/CBF-pythonic/issues (but preferably, just by email)
+Report any issues via email
