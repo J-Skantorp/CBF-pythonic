@@ -1,5 +1,7 @@
 # CBF-pythonic
-Python library for generating text files in the CBF-format for Mixed-Integer Semidefinite Programs (MISDPs) using pythonic operators.
+Python implementation for generating text files in the CBF-format for Mixed-Integer Semidefinite Programs (MISDPs) using pythonic operators.
+
+Important note: The CBF-format supports other cones (such as the exponential cone and the quadratic), but they are not implemented here!
 
 The type of problems suitable can be stated as 
 
@@ -35,9 +37,12 @@ $$
 \end{aligned}
 $$
 
-
-
 Problems can be stated in both primal and dual form, i.e., it allows for both PSD-constrained matrix variables as in line 4, and linear PSD-constraints as in line 3. Note that while a problem can contain both PSD-variables and PSD-constraints the (primal) PSD matrix variables cannot be involved in the (dual) PSD constraints.
+
+## The CBF-format
+The CBF-format is developed by the [The Conic Benchmark Library](https://cblib.zib.de/). 
+
+This implementation is based on version 2.
 
 ## Features
 
@@ -89,6 +94,14 @@ M.writeCBF(file_name) # Write model to file
 ```
 
 See the [full documentation](./CBF_documentation.pdf) for detailed usage and examples.
+
+## Examples
+
+This repository includes two example implementation files demonstrating how to use the library:
+
+- `isometry_example.py` — Demonstrates the primal formulation
+- `random_example.py` — Demonstrates the dual formulation
+
 ## Requirements
 
 - Python 3.7+
@@ -100,10 +113,10 @@ Contributions are welcome! Please open issues or submit pull requests on GitHub.
 
 ## License
 
-This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
 Created by Johanna Skåntorp - [skanto @ kth.se](mailto:skanto@kth.se)
 
-Report issues at: https://github.com/yourusername/CBF-pythonic/issues
+You may report issues at: https://github.com/yourusername/CBF-pythonic/issues (but preferably, just by email)
