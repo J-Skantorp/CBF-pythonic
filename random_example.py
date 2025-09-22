@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Wed Apr 30 10:01:39 2025
+Example usage of CBF_pythonic
 
+Created on Wed Apr 30 10:01:39 2025
 @author: johannaskantorp
 
 We create instances of a random problem in the dual form, and write it to CBF-file: "temp_cbf.cbf"
