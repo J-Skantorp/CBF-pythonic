@@ -512,6 +512,8 @@ class Model:
         # Only add constraints if bound is not +/- infty
         if var_lb != -np.inf: 
             self.lb_constraints.append(BoundConstraint(idx, var_lb, "L+"))
+         if var_ub != np.inf:
+            self.ub.constraints.append(BoundConstraint(idx, var_ub, "L-"))
 
 
 
